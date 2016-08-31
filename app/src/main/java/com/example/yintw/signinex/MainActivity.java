@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         userList = new ArrayList<>();
-        userList.add("银天伟");
-        userList.add("吴文彬");
-        userList.add("岳峥");
-        userList.add("吕新丽");
+        userList.add("yin");
+        userList.add("wu");
+        userList.add("yue");
+        userList.add("lv");
         mSpinner = (Spinner) findViewById(R.id.spinner);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, userList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -157,13 +157,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getUserId() {
-        if ("银天伟".equals(userName)) {
+        if ("yin".equals(userName)) {
             return "1045";
-        } else if ("吴文彬".equals(userName)) {
+        } else if ("wu".equals(userName)) {
             return "1605";
-        } else if ("岳峥".equals(userName)) {
+        } else if ("yue".equals(userName)) {
             return "1026";
-        } else if ("吕新丽".equals(userName)) {
+        } else if ("lv".equals(userName)) {
             return "266";
         } else {
             return "1045";
